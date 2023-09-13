@@ -1,0 +1,816 @@
+@import url(./utility.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--body-text-color);
+}
+
+section {
+    padding: 120px 0;
+}
+
+/*====================START HEADER SECTION====================*/
+
+header {
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sticky-menu {
+    position: fixed;
+    left: 0;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.16);
+    background: var(--color-white);
+    transition: 0.5s;
+}
+
+/* start top-header-wrap */
+header .header-topbar {
+    background-color: var(--theme-color);
+}
+
+.right-header-wrap a {
+    margin-right: 20px;
+}
+
+.top-header-wrap {
+    width: 100%;
+    height: 30px;
+    background-color: var(--theme-color);
+}
+
+.social-icon a {
+    letter-spacing: 10px;
+}
+
+/* menu */
+.main-menu-wrapper {
+    height: 4rem;
+}
+
+.menu-wrapper li.nav-item {
+    margin-right: 30px;
+}
+
+.menu-wrapper li.nav-item a {
+    color: var(--color-dark);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-wrapper li.nav-item:last-child {
+    margin-right: 0;
+}
+
+
+/* end top-header-wrap */
+
+/* start bottom-header-wrap */
+header .name-logo {
+    width: 10rem;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+/* end bottom-header-wrap */
+#backTop {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background: var(--theme-color);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#backTop i {
+    color: var(--light);
+    font-size: 30px;
+}
+
+/*====================END HEADER SECTION====================*/
+
+
+/*====================ABOUT SECTION====================*/
+.about-img img {
+    width: 100%;
+    border: 1px solid #DEE2E6;
+}
+
+.aboutSection .about-section p {
+    color: var(--dark-gray);
+    line-height: 25px;
+    width: 90%;
+}
+
+/*====================END ABOUT SECTION====================*/
+
+
+/*====================START COURSES SECTION====================*/
+
+#home-courses {
+    background-color: var(--color-body);
+}
+
+.card {
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.courses-info .card {
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card .fee {
+    text-align: center;
+    margin: 20px;
+    border: 2px solid var(--color-body);
+}
+
+.fee p {
+    line-height: 20px;
+}
+.card p{
+    padding: 6px;
+}
+
+
+/*====================END COURSES SECTION====================*/
+
+
+
+
+/*====================start tab layout section ====================*/
+.tabs-info {
+    width: 50%;
+    display: inline-block;
+}
+
+.tabs-info p {
+    line-height: 30px;
+    color: var(--text);
+}
+
+.tab-vedio {
+    width: 40%;
+    float: right;
+}
+
+.tab-vedio iframe {
+    width: 100%;
+    height: 319px;
+}
+
+.ui-widget-header {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.tab-item li {
+    background-color: #fff !important;
+    border: none !important;
+    color: #000;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #333 !important;
+    border-bottom: 2px solid red !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+/*====================end tab layout section ====================*/
+
+
+
+/* ===================team slider-section======================= */
+#sliderScetion {
+    background-color: var(--color-body);
+}
+
+.team-carousel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+}
+
+.slide {
+    border: 2px solid var(--color-white);
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.slide:hover {
+    box-shadow: 0 0 11px var(--body-text-color);
+}
+
+.slide img.item {
+    width: 100%;
+}
+
+.slide h3 {
+    text-align: center;
+
+}
+
+.slide h4 {
+    text-align: center;
+    color: var(--body-text-color);
+}
+
+
+.slide:hover {
+    box-shadow: 10px 0 30px rgba(51, 51, 51, 0.13);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide img.item {
+    padding: 10px;
+}
+
+.slide h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slide h4 {
+    text-align: center;
+    color: var(--text);
+}
+
+.slide-icon {
+    position: relative;
+    width: 70%;
+    margin-left: 38px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: var(--theme-color);
+    width: 100%;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 7rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overlay a {
+    text-decoration: none;
+    color: var(--color-body);
+    letter-spacing: 10px;
+}
+
+.slide:hover .overlay {
+    opacity: 1;
+}
+
+.owl-stage-outer {
+    height: 29rem;
+}
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+    display: none;
+}
+
+/* =====================end card slider========================== */
+
+/*========================Event-section===========================*/
+#event-section .event-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#event-section .event-info .event-card img {
+    width: 375px;
+    border-radius: 10px;
+}
+
+#event-section .event-info .event-card {
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#event-section .event-info .event-card p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#event-section h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.event-card .event-timing {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+#event-section .event-timing {
+    margin-bottom: 30px;
+}
+
+#event-section .event-card .event-timing a {
+    text-decoration: none;
+    color: black;
+}
+
+.event-card .primary-btn {
+    margin-left: 20px;
+    margin-bottom: 26px;
+    width: 336px;
+    border-radius: 0 0 5px 5px;
+}
+
+#event-section .event-card h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+#event-section .card p {
+    padding: 6px;
+}
+.event-card .primary-btn a.btn {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#event-section .coursesbtn {
+    margin-top: 68px;
+    width: 150px;
+    height: 48px;
+    margin-bottom: 100px;
+}
+
+button.primary-btn.coursesbtn {
+    margin-left: 32rem;
+}
+
+/* ======================END-event-section====================== */
+
+
+/* =======================footer-section========================== */
+footer {
+    background-color: var(--footer-color);
+    height: 35rem;
+}
+
+#last-section img {
+    width: 170px;
+}
+
+#last-section .sec-1 {
+    width: 20rem;
+}
+
+#last-section .sec-1 p {
+    line-height: 30px;
+    color: var(--color-white);
+}
+
+#last-section .sec-1 .social-icon h4 {
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+#last-section .sec-2 li {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+#last-section .sec-3 li {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+#last-section .sec-4 li {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+#last-section .social-icon a {
+    color: var(--color-white);
+    letter-spacing: 10px;
+}
+
+/* ============================end footer======================== */
+
+/*-------------------------------------------------------------------------------------
+                                   ABOUT
+ --------------------------------------------------------------------------------------*/
+.breadcrump-section {
+    background-image: url(../image/banner-6.jpg);
+    padding: 110px 0 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.breadcrump-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 15, 64, 0.8);
+}
+
+.breadcrump-content {
+    text-align: center;
+}
+
+.breadcrump-content h2,
+.breadcrump-content p {
+    color: white;
+    position: relative;
+}
+
+/*-------------------------------------------------------------------------------------
+                                END-ABOUT
+ --------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                                START-CONTACT
+ --------------------------------------------------------------------------------------*/
+
+
+
+.address h1 {
+    font-size: 40px;
+}
+
+.information {
+    width: 50%;
+    border-radius: 5px;
+    padding: 67px 0px 85px 47px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.information input[type=text] {
+    width: 90%;
+}
+
+input[type=text],
+select {
+    width: 60%;
+    padding: 30px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.address a {
+    text-decoration: none;
+    color: var(--theme-color);
+    font-size: 45px;
+}
+
+.personal-info h3 {
+    font-size: 21px;
+}
+
+.personal-info {
+    line-height: 35px;
+    padding: 6px 23px 20px 27px;
+}
+
+#textarea {
+    width: 90%;
+    height: 4rem;
+}
+
+.information input[type=text] {
+    width: 90%;
+    height: 50px;
+}
+
+/*-------------------------------------------------------------------------------------
+                               END-CONTACT
+ --------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------
+                               start-Upcoming Batch-Section
+ --------------------------------------------------------------------------------------*/
+
+.optionSection {
+    justify-content: center;
+}
+
+.optionSection select {
+    width: 260px;
+    padding: 10px 20px;
+}
+
+.courses-info .card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrap-info a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    margin: 20px 0px 30px 30px;
+}
+
+.wrap-info a i {
+    color: var(--theme-color);
+}
+
+.courses-info {
+    margin-bottom: 50px;
+}
+
+
+.search-box {
+    margin-top: 10px;
+    border: 2px solid #eeeded;
+    height: 37px;
+    margin-top: 20px;
+}
+
+.search-box button {
+    width: 30px;
+    height: 35px;
+    background-color: var(--color-white);
+    border: var(--color-dark);
+}
+
+input {
+    width: 50px;
+    height: 35px;
+    border: none;
+    margin-left: -6px;
+}
+
+/*-------------------------------------------------------------------------------------
+                               end-Upcoming Batch-Section
+ --------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                               start-Seminar Registration-Section
+ --------------------------------------------------------------------------------------*/
+.SeminarRegistration {
+    background-color: var(--color-body);
+}
+
+.seminar {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=text],
+select {
+    width: 90%;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: var(--theme-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.theme-seminar-btn {
+    color: var(--color-white);
+    padding: 15px 40px;
+    transition: all .5s;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    background: var(--theme-color);
+}
+
+/*-------------------------------------------------------------------------------------
+                               end-Seminar Registration-Section
+ --------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                               start-admission-Section
+ --------------------------------------------------------------------------------------*/
+.admission {
+    width: 70%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+}
+
+.admission-info .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px;
+
+}
+
+.admission-info input[type=text],
+select {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+/*-------------------------------------------------------------------------------------
+                               end-admission-Section
+ --------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+                               WEB
+ --------------------------------------------------------------------------------------*/
+.Course-single-area {
+    background-color: var(--color-body);
+}
+
+.course-left-bar {
+    width: 30%;
+}
+
+.course-price {
+    line-height: 40px;
+    padding: 30px;
+}
+
+.courses-btn {
+    border-bottom: 1px solid #ddd;
+    padding: 0 30px 30px;
+}
+
+.admission-info-1 {
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admission-info-1 del {
+    font-size: 2.3rem;
+    color: black;
+    font-weight: 600;
+}
+
+.admission-info-1 h2 {
+    color: black;
+    font-size: 2rem;
+}
+
+.courses-btn button {
+    border-radius: 5px;
+}
+
+.left-list ul li i {
+    color: var(--theme-color);
+    letter-spacing: 9px;
+}
+
+.left-list {
+    padding: 10px;
+    line-height: 40px;
+
+}
+
+.right-list {
+    padding: 10px;
+    line-height: 40px;
+}
+
+.right-list li {
+    text-align: right;
+
+}
+
+.course-info-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.admission-info-2 {
+    width: 100%;
+    height: 22rem;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admission-info-2 ul li {
+    line-height: 40px;
+}
+
+.admission-info-2 ul li i {
+    color: var(--theme-color);
+    letter-spacing: 9px;
+}
+
+.course-right-bar {
+    width: 65%;
+}
+
+.course-tab-info {
+    width: 100%;
+    display: inline-block;
+
+}
+
+.about-instructor img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.card-carousel {
+    margin-top: 10px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-instructor {
+    border: 1px solid #eaedef;
+    width: 100%;
+    height: 90px;
+}
+
+.about-instructor a {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.card .web-btn {
+    margin-bottom: 25px;
+}
+/*-------------------------------------------------------------------------------------
+                               end-WEB
+ --------------------------------------------------------------------------------------*/
